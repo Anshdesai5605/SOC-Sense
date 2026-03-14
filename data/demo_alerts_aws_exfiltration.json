@@ -1,0 +1,57 @@
+[
+  {
+    "alert_id": "101",
+    "timestamp": "2026-03-08T06:15:22Z",
+    "source": "aws_cloudtrail",
+    "event_type": "iam_user_created",
+    "severity": "low",
+    "user": "developer_john",
+    "ip_address": "84.32.11.90",
+    "location": "Germany",
+    "resource": "AWS_IAM"
+  },
+  {
+    "alert_id": "102",
+    "timestamp": "2026-03-08T06:18:45Z",
+    "source": "aws_cloudtrail",
+    "event_type": "policy_attached",
+    "severity": "medium",
+    "user": "developer_john",
+    "ip_address": "84.32.11.90",
+    "location": "Germany",
+    "resource": "AdministratorAccess"
+  },
+  {
+    "alert_id": "103",
+    "timestamp": "2026-03-08T06:25:10Z",
+    "source": "aws_cloudtrail",
+    "event_type": "s3_bucket_enumeration",
+    "severity": "medium",
+    "user": "developer_john",
+    "ip_address": "84.32.11.90",
+    "location": "Germany",
+    "resource": "Multiple S3 Buckets"
+  },
+  {
+    "alert_id": "104",
+    "timestamp": "2026-03-08T06:30:05Z",
+    "source": "aws_macie",
+    "event_type": "sensitive_data_accessed",
+    "severity": "high",
+    "user": "developer_john",
+    "ip_address": "84.32.11.90",
+    "location": "Germany",
+    "resource": "s3://finance-customer-backups-2026"
+  },
+  {
+    "alert_id": "105",
+    "timestamp": "2026-03-08T06:33:50Z",
+    "source": "network_firewall",
+    "event_type": "large_data_transfer",
+    "severity": "critical",
+    "user": "developer_john",
+    "ip_address": "84.32.11.90",
+    "location": "Germany",
+    "resource": "Outbound to 185.20.10.4 (Unknown VPN)"
+  }
+]

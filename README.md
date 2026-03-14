@@ -21,17 +21,20 @@ Soc Sense solves this problem by:
   - Risk level  
   - Confidence score  
   - Recommended next investigation steps  
+- **New!** Exporting structured, AI-generated Incident Reports directly to Markdown (`.md`) for Tier-2 responders.
+- **New!** A modern, dark-themed SIEM dashboard with glassmorphism and subtle hacker-themed animations.
 
 The system assists human analysts instead of replacing them.
 
 ---
 
 ## ⚙️ How It Works
-1. Raw security alerts are ingested in JSON format  
+1. Analysts **upload** raw security alerts in JSON format directly through the UI sidebar  
 2. Alerts are correlated using simple rules such as user, IP address, and time window  
-3. A step-by-step incident timeline is generated  
+3. A step-by-step incident timeline is generated alongside key telemetry metrics  
 4. AI performs Tier-1 SOC triage and produces structured, explainable output  
-5. Results are displayed in an interactive Streamlit dashboard  
+5. Results are displayed in an interactive, horizontal tabbed dashboard  
+6. Analysts can click a button to **download** the full Threat Report as a Markdown file  
 
 ---
 
@@ -76,9 +79,10 @@ http://localhost:8501
 ---
 
 ## 📊 Demo Flow
-1. View raw security alert noise  
-2. See alerts correlated into meaningful incidents  
-3. Review AI-generated Tier-1 SOC analysis and recommended next steps  
+1. Upload a custom JSON security log file (e.g., AWS exfiltration logs) via the Control Center sidebar
+2. View real-time telemetry metrics and system status
+3. Review AI-generated Tier-1 SOC analysis, classified by severity and confidence score in dedicated incident tabs
+4. Download the generated Threat Report (`.md`) to share findings with the team  
 
 ---
 
